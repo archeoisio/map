@@ -12,7 +12,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Foce Irno",
-        "Criticit?": "Terreno uso pubblico venduto per costruire albergo privato",
+        "Criticità": "Terreno uso pubblico venduto per costruire albergo privato",
         "Proposta": null,
         "Stato proposta": "Interrogazione coalizione Lanocita",
         "Tematica": "Spazi pubblici",
@@ -58,7 +58,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Trincerone",
-        "Criticit?": "Traffico/velocit? eccessiva auto",
+        "Criticità": "Traffico/velocit? eccessiva auto",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Spazi pubblici",
@@ -140,7 +140,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Parco Galiziano",
-        "Criticit?": "Non valorizzato",
+        "Criticità": "Non valorizzato",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Ambiente",
@@ -274,7 +274,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Villa Comunale",
-        "Criticit?": "Poco sfruttata",
+        "Criticità": "Poco sfruttata",
         "Proposta": "Installazioni artistiche tutto l'anno",
         "Stato proposta": null,
         "Tematica": "Cultura",
@@ -376,7 +376,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Ex-villa Medici",
-        "Criticit?": "Costruzione palazzo 11 piani/edificio storico",
+        "Criticità": "Costruzione palazzo 11 piani/edificio storico",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Spazi pubblici",
@@ -418,7 +418,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Lungomare Trieste",
-        "Criticit?": "Poco sfrutatto/Mal tenuto",
+        "Criticità": "Poco sfrutatto/Mal tenuto",
         "Proposta": "Installazioni artistiche tutto l'anno",
         "Stato proposta": null,
         "Tematica": "Cultura",
@@ -592,7 +592,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Ex-caserma Angelucci",
-        "Criticit?": "Non utilizzata",
+        "Criticità": "Non utilizzata",
         "Proposta": "Parco Urbano",
         "Stato proposta": "Petizione Coalizione Lanocita",
         "Tematica": "Ambiente",
@@ -642,7 +642,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Spiagge Torrione",
-        "Criticit?": "Ripascimento non conforme",
+        "Criticità": "Ripascimento non conforme",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Ambiente",
@@ -748,7 +748,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Lungomare Marconi",
-        "Criticit?": "Chiuso per dissesto idrogeologico",
+        "Criticità": "Chiuso per dissesto idrogeologico",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Spazi pubblici",
@@ -794,7 +794,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Parco Giochi Lung. Tafuri",
-        "Criticit?": "Abbandonato",
+        "Criticità": "Abbandonato",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Spazi pubblici",
@@ -844,7 +844,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Porticciolo",
-        "Criticit?": "Progetto costruzione porto privato",
+        "Criticità": "Progetto costruzione porto privato",
         "Proposta": "Salvaguardia/riqualificazione partecipata",
         "Stato proposta": "Comitato Gi? le mani dal Porticciolo",
         "Tematica": "Spazi pubblici",
@@ -1098,7 +1098,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Grattacieli",
-        "Criticit?": "Impatto su paesaggio, perch? sono stati autorizzati?",
+        "Criticità": "Impatto su paesaggio, perch? sono stati autorizzati?",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Ambiente",
@@ -1164,7 +1164,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Pattinodromo",
-        "Criticit?": "Chiuso per crollo",
+        "Criticità": "Chiuso per crollo",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
@@ -1250,7 +1250,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Ospedale Ruggi D'Aragona",
-        "Criticit?": "Carenza posti letto/Pronto soccorso",
+        "Criticità": "Carenza posti letto/Pronto soccorso",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Salute",
@@ -1404,7 +1404,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Casa di comunit? Matierno",
-        "Criticit?": "Medicina territoriale non efficiente",
+        "Criticità": "Medicina territoriale non efficiente",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Salute",
@@ -1446,7 +1446,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Ospedale Via Vernieri",
-        "Criticit?": "Medicina territoriale non efficiente; apertura consultorio; casa di comunit?",
+        "Criticità": "Medicina territoriale non efficiente; apertura consultorio; casa di comunit?",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Salute",
@@ -1536,7 +1536,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Poliambulatorio Pastena",
-        "Criticit?": "Medicina territoriale non efficiente; apertura consultorio",
+        "Criticità": "Medicina territoriale non efficiente; apertura consultorio",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Salute",
@@ -1582,7 +1582,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Scuola C.A. Alemagna",
-        "Criticit?": "Chiusa in attesa di lavori",
+        "Criticità": "Chiusa in attesa di lavori",
         "Proposta": "Richiesta riapertura",
         "Stato proposta": "Petizione a cura della Preside",
         "Tematica": "Servizi urbani",
@@ -1636,7 +1636,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Cava Cernicchiara",
-        "Criticit?": "Odori nauseabondi",
+        "Criticità": "Odori nauseabondi",
         "Proposta": "Capire causa e nocivit?",
         "Stato proposta": "Raccolta firme cittadini/Interrogazione della coalizione Lanocita",
         "Tematica": "Salute",
@@ -1766,7 +1766,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Parco del Seminario",
-        "Criticit?": "In parte chiuso abbandonato",
+        "Criticità": "In parte chiuso abbandonato",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Ambiente",
@@ -1852,7 +1852,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Area archeologica Fratte",
-        "Criticit?": "Scarsa manutenzione/gestione",
+        "Criticità": "Scarsa manutenzione/gestione",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Cultura",
@@ -1958,7 +1958,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Biblioteca Provinciale",
-        "Criticit?": "Chiusa perch? inagibile",
+        "Criticità": "Chiusa perch? inagibile",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Cultura",
@@ -2012,7 +2012,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Sentiero del Principe",
-        "Criticit?": "Non valorizzato",
+        "Criticità": "Non valorizzato",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Ambiente",
@@ -2378,7 +2378,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Stadio Vestuti",
-        "Criticit?": "Assenza manutenzione",
+        "Criticità": "Assenza manutenzione",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
@@ -2436,7 +2436,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Parco del Mercatello",
-        "Criticit?": "Assenza manutenzione",
+        "Criticità": "Assenza manutenzione",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Ambiente",
@@ -2550,7 +2550,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Arco dei Diavoli",
-        "Criticit?": "Impacchettato per evitare crolli",
+        "Criticità": "Impacchettato per evitare crolli",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Cultura",
@@ -2596,7 +2596,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Carnale",
-        "Criticit?": "Non valorizzata",
+        "Criticità": "Non valorizzata",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Cultura",
@@ -2670,7 +2670,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Castel Vernieri",
-        "Criticit?": "Abbandonato",
+        "Criticità": "Abbandonato",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Cultura",
@@ -2707,108 +2707,6 @@ var json_poligoniprimavolta_6 = {
                 14.853101728919647,
                 40.65921406597903
               ]
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Nome": "Liceo Da Procida",
-        "Criticit?": "Scarsa manutenzione",
-        "Proposta": "",
-        "Stato proposta": "",
-        "Tematica": "Servizi urbani",
-        "Quartiere": "Carmine"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              14.768925,
-              40.685259
-            ],
-            [
-              14.768815,
-              40.685209
-            ],
-            [
-              14.768692,
-              40.685089
-            ],
-            [
-              14.768631,
-              40.685101
-            ],
-            [
-              14.768612,
-              40.685077
-            ],
-            [
-              14.768579,
-              40.685089
-            ],
-            [
-              14.76854,
-              40.685016
-            ],
-            [
-              14.768446,
-              40.684967
-            ],
-            [
-              14.768372,
-              40.684877
-            ],
-            [
-              14.768446,
-              40.684846
-            ],
-            [
-              14.768423,
-              40.684811
-            ],
-            [
-              14.768593,
-              40.684749
-            ],
-            [
-              14.76868,
-              40.684797
-            ],
-            [
-              14.768806,
-              40.68474
-            ],
-            [
-              14.768755,
-              40.684685
-            ],
-            [
-              14.768913,
-              40.684627
-            ],
-            [
-              14.768929,
-              40.684639
-            ],
-            [
-              14.768947,
-              40.684619
-            ],
-            [
-              14.769408,
-              40.685008
-            ],
-            [
-              14.769278,
-              40.6851
-            ],
-            [
-              14.768925,
-              40.685259
             ]
           ]
         ]
