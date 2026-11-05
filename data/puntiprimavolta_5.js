@@ -11,26 +11,6 @@ var json_puntiprimavolta_5 = {
     {
       "type": "Feature",
       "properties": {
-        "Nome": "Stazione Marittima",
-        "Criticità": "Inquinamento navi da crociera",
-        "Proposta": null,
-        "Stato proposta": null,
-        "Tematica": "Ambiente",
-        "ID": 12,
-        "Data immissione": "2026-10-18",
-        "Allegato": null
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          14.75139439493227,
-          40.674312642888864
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "Nome": "Centro Storico",
         "Criticità": "Parte alta abbandonata",
         "Proposta": null,
