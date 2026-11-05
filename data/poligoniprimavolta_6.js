@@ -2712,6 +2712,47 @@ var json_poligoniprimavolta_6 = {
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Data immissione": "2026-11-05T17:37:46.724Z",
+        "Nome": "CASAMIA",
+        "Criticità": "occupè",
+        "Proposta": "",
+        "Stato proposta": "",
+        "Tematica": "Spazi pubblici",
+        "Quartiere": "Carmine",
+        "Allegato": "",
+        "id": "segnalazione_051126_001"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              14.767641,
+              40.685696
+            ],
+            [
+              14.767648,
+              40.685406
+            ],
+            [
+              14.767809,
+              40.685367
+            ],
+            [
+              14.767958,
+              40.685578
+            ],
+            [
+              14.767641,
+              40.685696
+            ]
+          ]
+        ]
+      }
     }
   ]
 };
