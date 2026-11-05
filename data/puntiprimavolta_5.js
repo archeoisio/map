@@ -167,6 +167,27 @@ var json_puntiprimavolta_5 = {
           40.66832443993103
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Data immissione": "2026-10-18T00:00:00.000Z",
+        "Nome": "Stazione Marittima",
+        "Criticità": "Inquinamento navi da crociera",
+        "Proposta": "",
+        "Stato proposta": "",
+        "Tematica": "Ambiente",
+        "Quartiere": "",
+        "Allegato": "",
+        "id": "segnalazione_181026_001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.75139439493227,
+          40.674312642888864
+        ]
+      }
     }
   ]
 };
