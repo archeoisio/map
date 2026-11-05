@@ -63,7 +63,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Spazi pubblici",
-        "ID": 1,
+        "ID": "segnalazione_181026_011",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -145,7 +145,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Ambiente",
-        "ID": 11,
+        "ID": "segnalazione_181026_012",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -279,7 +279,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": "Installazioni artistiche tutto l'anno",
         "Stato proposta": null,
         "Tematica": "Cultura",
-        "ID": 7,
+        "ID": "segnalazione_181026_013",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -381,7 +381,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Spazi pubblici",
-        "ID": 2,
+        "ID": "segnalazione_181026_014",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -423,7 +423,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": "Installazioni artistiche tutto l'anno",
         "Stato proposta": null,
         "Tematica": "Cultura",
-        "ID": 8,
+        "ID": "segnalazione_181026_015",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -597,7 +597,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": "Parco Urbano",
         "Stato proposta": "Petizione Coalizione Lanocita",
         "Tematica": "Ambiente",
-        "ID": 3,
+        "ID": "segnalazione_181026_016",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -647,7 +647,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Ambiente",
-        "ID": 4,
+        "ID": "segnalazione_181026_017",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -753,7 +753,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Spazi pubblici",
-        "ID": 5,
+        "ID": "segnalazione_181026_018",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -799,7 +799,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Spazi pubblici",
-        "ID": 6,
+        "ID": "segnalazione_181026_019",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -849,7 +849,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": "Salvaguardia/riqualificazione partecipata",
         "Stato proposta": "Comitato Giù le mani dal Porticciolo",
         "Tematica": "Spazi pubblici",
-        "ID": 9,
+        "ID": "segnalazione_181026_020",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -1103,7 +1103,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Ambiente",
-        "ID": 10,
+        "ID": "segnalazione_181026_021",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -1169,7 +1169,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
-        "ID": 16,
+        "ID": "segnalazione_181026_022",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -1255,7 +1255,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Salute",
-        "ID": 17,
+        "ID": "segnalazione_181026_023",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -1409,7 +1409,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Salute",
-        "ID": 18,
+        "ID": "segnalazione_181026_024",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -1451,7 +1451,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Salute",
-        "ID": 19,
+        "ID": "segnalazione_181026_025",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -1541,7 +1541,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Salute",
-        "ID": 20,
+        "ID": "segnalazione_181026_026",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -1587,7 +1587,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": "Richiesta riapertura",
         "Stato proposta": "Petizione a cura della Preside",
         "Tematica": "Servizi urbani",
-        "ID": 21,
+        "ID": "segnalazione_181026_027",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -1641,7 +1641,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": "Capire causa e nocività",
         "Stato proposta": "Raccolta firme cittadini/Interrogazione della coalizione Lanocita",
         "Tematica": "Salute",
-        "ID": 22,
+        "ID": "segnalazione_181026_028",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -1771,7 +1771,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Ambiente",
-        "ID": 24,
+        "ID": "segnalazione_181026_029",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -1857,7 +1857,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Cultura",
-        "ID": 25,
+        "ID": "segnalazione_181026_030",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -1963,7 +1963,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Cultura",
-        "ID": 26,
+        "ID": "segnalazione_181026_031",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -2017,7 +2017,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Ambiente",
-        "ID": 27,
+        "ID": "segnalazione_181026_032",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -2383,7 +2383,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
-        "ID": 28,
+        "ID": "segnalazione_181026_033",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -2441,7 +2441,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Ambiente",
-        "ID": 29,
+        "ID": "segnalazione_181026_034",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -2555,7 +2555,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Cultura",
-        "ID": 30,
+        "ID": "segnalazione_181026_035",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -2601,7 +2601,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Cultura",
-        "ID": 27,
+        "ID": "segnalazione_181026_036",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -2675,7 +2675,7 @@ var json_poligoniprimavolta_6 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Cultura",
-        "ID": 28,
+        "ID": "segnalazione_181026_037",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
