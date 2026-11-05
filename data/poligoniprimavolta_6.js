@@ -1911,60 +1911,6 @@ var json_poligoniprimavolta_6 = {
     {
       "type": "Feature",
       "properties": {
-        "Nome": "Biblioteca Provinciale",
-        "Criticità": "Chiusa perchè inagibile",
-        "Proposta": null,
-        "Stato proposta": null,
-        "Tematica": "Cultura",
-        "ID": "segnalazione_181026_031",
-        "Data immissione": "2026-10-18",
-        "Allegato": null
-      },
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
-          [
-            [
-              [
-                14.76809779102374,
-                40.685465467577934
-              ],
-              [
-                14.76832710268853,
-                40.68540140291212
-              ],
-              [
-                14.768147059878022,
-                40.68513073393185
-              ],
-              [
-                14.768239020921714,
-                40.685036746895996
-              ],
-              [
-                14.768225330087082,
-                40.68502102413406
-              ],
-              [
-                14.76792018502613,
-                40.68515294906657
-              ],
-              [
-                14.767961202980663,
-                40.685215812623255
-              ],
-              [
-                14.76809779102374,
-                40.685465467577934
-              ]
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "Nome": "Sentiero del Principe",
         "Criticità": "Non valorizzato",
         "Proposta": null,
