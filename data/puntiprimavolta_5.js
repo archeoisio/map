@@ -32,14 +32,15 @@ var json_puntiprimavolta_5 = {
     {
       "type": "Feature",
       "properties": {
+        "Data immissione": "2026-10-18T00:00:00.000Z",
         "Nome": "Largo Plebiscito",
         "Criticità": "Varco ZTL",
-        "Proposta": null,
+        "Proposta": "",
         "Stato proposta": "Comitato CS",
         "Tematica": "Servizi urbani",
-        "ID": 15,
-        "Data immissione": "2026-10-18",
-        "Allegato": null
+        "Quartiere": "",
+        "Allegato": "",
+        "id": "segnalazione_181026_003"
       },
       "geometry": {
         "type": "Point",
