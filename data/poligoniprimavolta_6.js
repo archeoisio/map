@@ -11,14 +11,15 @@ var json_poligoniprimavolta_6 = {
     {
       "type": "Feature",
       "properties": {
+        "Data immissione": "2026-10-18T00:00:00.000Z",
         "Nome": "Foce Irno",
         "Criticità": "Terreno uso pubblico venduto per costruire albergo privato",
-        "Proposta": null,
+        "Proposta": "",
         "Stato proposta": "Interrogazione coalizione Lanocita",
         "Tematica": "Spazi pubblici",
-        "ID": 32,
-        "Data immissione": "2026-10-18",
-        "Allegato": null
+        "Quartiere": "",
+        "Allegato": "",
+        "id": "segnalazione_181026_010"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -2706,7 +2707,7 @@ var json_poligoniprimavolta_6 = {
               [
                 14.853101728919647,
                 40.65921406597903
-             ]
+              ]
             ]
           ]
         ]
