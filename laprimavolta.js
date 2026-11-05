@@ -897,6 +897,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         tematica: document.getElementById('f-tematica').value,
                         quartiere: document.getElementById('f-quartiere').value,
                         email: document.getElementById('f-email').value,
+                        allegato: document.getElementById('f-allegato').value,
                         geometry: geojson.geometry
                     };
 
