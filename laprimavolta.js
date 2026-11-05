@@ -5,7 +5,7 @@ let allTavoloLayers = [];
 let currentActiveTab = null;
 
 // URL della Web App di Google Apps Script
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxr8XdxDNPcfXlB5pht4ZUp9BRFmRo397LCFOSO-YAyhjZ2kbReQybRX71zOLw5_87B/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzNskM6tvGX_2W0asSyplL9hXzZqnVeOBLgO0dIkUlfMveRK2ki6GAN8eQIeAm1uZjk/exec";
 
 const isMobile = window.innerWidth < 768; 
 const MIN_ZOOM_VISIBLE = isMobile ? 2 : 13; 
