@@ -878,6 +878,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <option value="Altro">Altro</option>
                 </select><br>
                 <label style="font-size:11px; font-weight:bold;">Tua Email:*</label><br><input type="email" id="f-email" style="width:100%; margin-bottom:10px;" required><br>
+              <label style="font-size:11px; font-weight:bold;">Allegato (Link):</label><br><input type="text" id="f-allegato" placeholder="URL o link opzionale" style="width:100%; margin-bottom:10px;"><br>
                 <button id="btn-invia-segnalazione" style="background:#28a745; color:white; border:none; padding:8px 12px; cursor:pointer; width:100%; font-weight:bold; border-radius:4px;">Invia Segnalazione</button>
             </div>
         `;
