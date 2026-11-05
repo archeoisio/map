@@ -58,7 +58,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Trincerone",
-        "Criticità": "Traffico/velocit? eccessiva auto",
+        "Criticità": "Traffico/velocità eccessiva auto",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Spazi pubblici",
@@ -846,7 +846,7 @@ var json_poligoniprimavolta_6 = {
         "Nome": "Porticciolo",
         "Criticità": "Progetto costruzione porto privato",
         "Proposta": "Salvaguardia/riqualificazione partecipata",
-        "Stato proposta": "Comitato Gi? le mani dal Porticciolo",
+        "Stato proposta": "Comitato Giù le mani dal Porticciolo",
         "Tematica": "Spazi pubblici",
         "ID": 9,
         "Data immissione": "2026-10-18",
@@ -1098,7 +1098,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Grattacieli",
-        "Criticità": "Impatto su paesaggio, perch? sono stati autorizzati?",
+        "Criticità": "Impatto su paesaggio, perchè sono stati autorizzati?",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Ambiente",
@@ -1403,7 +1403,7 @@ var json_poligoniprimavolta_6 = {
     {
       "type": "Feature",
       "properties": {
-        "Nome": "Casa di comunit? Matierno",
+        "Nome": "Casa di comunità Matierno",
         "Criticità": "Medicina territoriale non efficiente",
         "Proposta": null,
         "Stato proposta": null,
@@ -1446,7 +1446,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Ospedale Via Vernieri",
-        "Criticità": "Medicina territoriale non efficiente; apertura consultorio; casa di comunit?",
+        "Criticità": "Medicina territoriale non efficiente; apertura consultorio; casa di comunità",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Salute",
@@ -1637,7 +1637,7 @@ var json_poligoniprimavolta_6 = {
       "properties": {
         "Nome": "Cava Cernicchiara",
         "Criticità": "Odori nauseabondi",
-        "Proposta": "Capire causa e nocivit?",
+        "Proposta": "Capire causa e nocività",
         "Stato proposta": "Raccolta firme cittadini/Interrogazione della coalizione Lanocita",
         "Tematica": "Salute",
         "ID": 22,
@@ -1958,7 +1958,7 @@ var json_poligoniprimavolta_6 = {
       "type": "Feature",
       "properties": {
         "Nome": "Biblioteca Provinciale",
-        "Criticità": "Chiusa perch? inagibile",
+        "Criticità": "Chiusa perchè inagibile",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Cultura",
