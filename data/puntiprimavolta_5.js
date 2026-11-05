@@ -11,14 +11,15 @@ var json_puntiprimavolta_5 = {
     {
       "type": "Feature",
       "properties": {
+        "Data immissione": "2026-10-18T00:00:00.000Z",
         "Nome": "Centro Storico",
         "Criticità": "Parte alta abbandonata",
-        "Proposta": null,
+        "Proposta": "",
         "Stato proposta": "Comitato CS",
         "Tematica": "Spazi pubblici",
-        "ID": 13,
-        "Data immissione": "2026-10-18",
-        "Allegato": null
+        "Quartiere": "",
+        "Allegato": "",
+        "id": "segnalazione_181026_002"
       },
       "geometry": {
         "type": "Point",
