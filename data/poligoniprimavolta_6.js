@@ -2709,6 +2709,7 @@ var json_poligoniprimavolta_6 = {
               ]
             ]
           ]
-        ]
+        }
       }
+    ]
     };
