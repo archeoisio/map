@@ -82,7 +82,11 @@ customStyleTag.innerHTML = `
         box-shadow: none !important;
         margin: 0 !important;
     }
-    
+    /* Posiziona i pulsanti di Leaflet.Draw in alto a destra, distanziati dal bordo */
+    .leaflet-right .leaflet-draw.leaflet-control {
+        margin-top: 80px !important; /* Spinge i pulsanti più in basso per non coprire il logo */
+        margin-right: 10px !important;
+    }
     /* ==================== STILE MOBILE ==================== */
     #custom-bottom-panel { 
         position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); 
@@ -826,7 +830,7 @@ document.addEventListener('DOMContentLoaded', () => {
     map.addLayer(drawnItems);
 
     var drawControl = new L.Control.Draw({
-        position: 'topleft', // Si posiziona sotto i tuoi bottoni esistenti
+        position: 'topright', // Si posiziona sotto i tuoi bottoni esistenti
         edit: {
             featureGroup: drawnItems
         },
