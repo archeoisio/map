@@ -19,7 +19,7 @@ var json_poligoniprimavolta_6 = {
         "Tematica": "Spazi pubblici",
         "Quartiere": "",
         "Allegato": "",
-        "id": "segnalazione_181026_010"
+        "ID": "segnalazione_181026_010"
       },
       "geometry": {
         "type": "MultiPolygon",
