@@ -19,7 +19,7 @@ var json_puntiprimavolta_5 = {
         "Tematica": "Spazi pubblici",
         "Quartiere": "",
         "Allegato": "",
-        "id": "segnalazione_181026_002"
+        "ID": "segnalazione_181026_002"
       },
       "geometry": {
         "type": "Point",
@@ -40,7 +40,7 @@ var json_puntiprimavolta_5 = {
         "Tematica": "Servizi urbani",
         "Quartiere": "",
         "Allegato": "",
-        "id": "segnalazione_181026_003"
+        "ID": "segnalazione_181026_003"
       },
       "geometry": {
         "type": "Point",
@@ -58,7 +58,7 @@ var json_puntiprimavolta_5 = {
         "Proposta": "Creare rete di trasporto circolare di collegamento",
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
-        "ID": 14,
+        "ID": "segnalazione_181026_004",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -78,7 +78,7 @@ var json_puntiprimavolta_5 = {
         "Proposta": "Creare rete di trasporto circolare di collegamento",
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
-        "ID": 12,
+        "ID": "segnalazione_181026_005",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -98,7 +98,7 @@ var json_puntiprimavolta_5 = {
         "Proposta": "Creare rete di trasporto circolare di collegamento",
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
-        "ID": 12,
+        "ID": "segnalazione_181026_006",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -118,7 +118,7 @@ var json_puntiprimavolta_5 = {
         "Proposta": "Creare rete di trasporto circolare di collegamento",
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
-        "ID": 12,
+        "ID": "segnalazione_181026_007",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -138,7 +138,7 @@ var json_puntiprimavolta_5 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
-        "ID": 23,
+        "ID": "segnalazione_181026_008",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -158,7 +158,7 @@ var json_puntiprimavolta_5 = {
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
-        "ID": 31,
+        "ID": "segnalazione_181026_009",
         "Data immissione": "2026-10-18",
         "Allegato": null
       },
@@ -181,7 +181,7 @@ var json_puntiprimavolta_5 = {
         "Tematica": "Ambiente",
         "Quartiere": "",
         "Allegato": "",
-        "id": "segnalazione_181026_001"
+        "ID": "segnalazione_181026_001"
       },
       "geometry": {
         "type": "Point",
