@@ -2888,6 +2888,53 @@ var poligoniprimavolta = {
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Data immissione": "2026-10-18T00:00:00.000Z",
+        "Nome": "Foce Irno",
+        "Criticità": "Terreno uso pubblico venduto per costruire albergo privato",
+        "Proposta": "",
+        "Stato proposta": "Interrogazione coalizione Lanocita",
+        "Tematica": "Spazi pubblici",
+        "Quartiere": "",
+        "Allegato": "",
+        "id": "segnalazione_181026_010"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                14.769844059015568,
+                40.674869219057456
+              ],
+              [
+                14.769854462504753,
+                40.67488196647839
+              ],
+              [
+                14.770496491179314,
+                40.67471779753405
+              ],
+              [
+                14.770224816364033,
+                40.674122284699656
+              ],
+              [
+                14.769567860017032,
+                40.6743755091564
+              ],
+              [
+                14.769844059015568,
+                40.674869219057456
+              ]
+            ]
+          ]
+        ]
+      }
     }
   ]
 };
