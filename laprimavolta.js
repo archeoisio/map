@@ -863,13 +863,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <label style="font-size:11px; font-weight:bold;">Tematica:*</label><br>
                 <select id="f-tematica" style="width:100%; margin-bottom:5px;">
                     <option value="Spazi pubblici">Spazi pubblici</option>
-                    <option value="Verde urbano">Verde urbano</option>
-                    <option value="Mobilità">Mobilità</option>
                     <option value="Ambiente">Ambiente</option>
                     <option value="Cultura">Cultura</option>
                     <option value="Salute">Salute</option>
                     <option value="Servizi urbani">Servizi urbani</option>
-                    <option value="Altro">Altro</option>
                 </select><br>
                 <label style="font-size:11px; font-weight:bold;">Quartiere:*</label><br>
                 <select id="f-quartiere" style="width:100%; margin-bottom:8px;">
