@@ -12,7 +12,7 @@ var json_puntiprimavolta_5 = {
       "type": "Feature",
       "properties": {
         "Nome": "Stazione Marittima",
-        "Criticit?": "Inquinamento navi da crociera",
+        "Criticità": "Inquinamento navi da crociera",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Ambiente",
@@ -32,7 +32,7 @@ var json_puntiprimavolta_5 = {
       "type": "Feature",
       "properties": {
         "Nome": "Centro Storico",
-        "Criticit?": "Parte alta abbandonata",
+        "Criticità": "Parte alta abbandonata",
         "Proposta": null,
         "Stato proposta": "Comitato CS",
         "Tematica": "Spazi pubblici",
@@ -52,7 +52,7 @@ var json_puntiprimavolta_5 = {
       "type": "Feature",
       "properties": {
         "Nome": "Largo Plebiscito",
-        "Criticit?": "Varco ZTL",
+        "Criticità": "Varco ZTL",
         "Proposta": null,
         "Stato proposta": "Comitato CS",
         "Tematica": "Servizi urbani",
@@ -72,7 +72,7 @@ var json_puntiprimavolta_5 = {
       "type": "Feature",
       "properties": {
         "Nome": "Metro Torrione",
-        "Criticit?": "Assenza collegamenti autobus",
+        "Criticità": "Assenza collegamenti autobus",
         "Proposta": "Creare rete di trasporto circolare di collegamento",
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
@@ -92,7 +92,7 @@ var json_puntiprimavolta_5 = {
       "type": "Feature",
       "properties": {
         "Nome": "Metro Pastena",
-        "Criticit?": "Assenza collegamenti autobus",
+        "Criticità": "Assenza collegamenti autobus",
         "Proposta": "Creare rete di trasporto circolare di collegamento",
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
@@ -112,7 +112,7 @@ var json_puntiprimavolta_5 = {
       "type": "Feature",
       "properties": {
         "Nome": "Metro Mercatello",
-        "Criticit?": "Assenza collegamenti autobus",
+        "Criticità": "Assenza collegamenti autobus",
         "Proposta": "Creare rete di trasporto circolare di collegamento",
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
@@ -132,7 +132,7 @@ var json_puntiprimavolta_5 = {
       "type": "Feature",
       "properties": {
         "Nome": "Metro Arbostella",
-        "Criticit?": "Assenza collegamenti autobus",
+        "Criticità": "Assenza collegamenti autobus",
         "Proposta": "Creare rete di trasporto circolare di collegamento",
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
@@ -152,7 +152,7 @@ var json_puntiprimavolta_5 = {
       "type": "Feature",
       "properties": {
         "Nome": "Via Diaz",
-        "Criticit?": "Immondizia, scarsa cura",
+        "Criticità": "Immondizia, scarsa cura",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
@@ -172,7 +172,7 @@ var json_puntiprimavolta_5 = {
       "type": "Feature",
       "properties": {
         "Nome": "Via Galloppo",
-        "Criticit?": "Lavori stradali non conformi",
+        "Criticità": "Lavori stradali non conformi",
         "Proposta": null,
         "Stato proposta": null,
         "Tematica": "Servizi urbani",
@@ -185,24 +185,6 @@ var json_puntiprimavolta_5 = {
         "coordinates": [
           14.790257506163542,
           40.66832443993103
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Nome": "Liceo dap",
-        "Criticit?": "scarsamanutenzione",
-        "Proposta": "",
-        "Stato proposta": "",
-        "Tematica": "Servizi urbani",
-        "Quartiere": "Carmine"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          14.768918,
-          40.68494
         ]
       }
     }
