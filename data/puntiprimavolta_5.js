@@ -1,16 +1,210 @@
 var json_puntiprimavolta_5 = {
-"type": "FeatureCollection",
-"name": "puntiprimavolta2",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "Nome": "Stazione Marittima", "Criticità": "Inquinamento navi da crociera", "Proposta": null, "Stato proposta": null, "Tematica": "Ambiente", "ID": 12, "Data immissione": "2026-10-18", "Allegato": null }, "geometry": { "type": "Point", "coordinates": [ 14.751394394932269, 40.674312642888864 ] } },
-{ "type": "Feature", "properties": { "Nome": "Centro Storico", "Criticità": "Parte alta abbandonata", "Proposta": null, "Stato proposta": "Comitato CS", "Tematica": "Spazi pubblici", "ID": 13, "Data immissione": "2026-10-18", "Allegato": null }, "geometry": { "type": "Point", "coordinates": [ 14.755846538665093, 40.680000975921644 ] } },
-{ "type": "Feature", "properties": { "Nome": "Largo Plebiscito", "Criticità": "Varco ZTL", "Proposta": null, "Stato proposta": "Comitato CS", "Tematica": "Servizi urbani", "ID": 15, "Data immissione": "2026-10-18", "Allegato": null }, "geometry": { "type": "Point", "coordinates": [ 14.760113448410314, 40.680797984323313 ] } },
-{ "type": "Feature", "properties": { "Nome": "Metro Torrione", "Criticità": "Assenza collegamenti autobus", "Proposta": "Creare rete di trasporto circolare di collegamento", "Stato proposta": null, "Tematica": "Servizi urbani", "ID": 14, "Data immissione": "2026-10-18", "Allegato": null }, "geometry": { "type": "Point", "coordinates": [ 14.790287878409941, 40.670360868322028 ] } },
-{ "type": "Feature", "properties": { "Nome": "Metro Pastena", "Criticità": "Assenza collegamenti autobus", "Proposta": "Creare rete di trasporto circolare di collegamento", "Stato proposta": null, "Tematica": "Servizi urbani", "ID": 12, "Data immissione": "2026-10-18", "Allegato": null }, "geometry": { "type": "Point", "coordinates": [ 14.799720746909765, 40.664954135789479 ] } },
-{ "type": "Feature", "properties": { "Nome": "Metro Mercatello", "Criticità": "Assenza collegamenti autobus", "Proposta": "Creare rete di trasporto circolare di collegamento", "Stato proposta": null, "Tematica": "Servizi urbani", "ID": 12, "Data immissione": "2026-10-18", "Allegato": null }, "geometry": { "type": "Point", "coordinates": [ 14.804713951542766, 40.658824063788664 ] } },
-{ "type": "Feature", "properties": { "Nome": "Metro Arbostella", "Criticità": "Assenza collegamenti autobus", "Proposta": "Creare rete di trasporto circolare di collegamento", "Stato proposta": null, "Tematica": "Servizi urbani", "ID": 12, "Data immissione": "2026-10-18", "Allegato": null }, "geometry": { "type": "Point", "coordinates": [ 14.813104777722272, 40.651705979175738 ] } },
-{ "type": "Feature", "properties": { "Nome": "Via Diaz", "Criticità": "Immondizia, scarsa cura", "Proposta": null, "Stato proposta": null, "Tematica": "Servizi urbani", "ID": 23, "Data immissione": "2026-10-18", "Allegato": null }, "geometry": { "type": "Point", "coordinates": [ 14.767676995696583, 40.677223848669385 ] } },
-{ "type": "Feature", "properties": { "Nome": "Via Galloppo", "Criticità": "Lavori stradali non conformi", "Proposta": null, "Stato proposta": null, "Tematica": "Servizi urbani", "ID": 31, "Data immissione": "2026-10-18", "Allegato": null }, "geometry": { "type": "Point", "coordinates": [ 14.790257506163542, 40.668324439931027 ] } }
-]
+  "type": "FeatureCollection",
+  "name": "puntiprimavolta2",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Nome": "Stazione Marittima",
+        "Criticit?": "Inquinamento navi da crociera",
+        "Proposta": null,
+        "Stato proposta": null,
+        "Tematica": "Ambiente",
+        "ID": 12,
+        "Data immissione": "2026-10-18",
+        "Allegato": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.75139439493227,
+          40.674312642888864
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Nome": "Centro Storico",
+        "Criticit?": "Parte alta abbandonata",
+        "Proposta": null,
+        "Stato proposta": "Comitato CS",
+        "Tematica": "Spazi pubblici",
+        "ID": 13,
+        "Data immissione": "2026-10-18",
+        "Allegato": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.755846538665093,
+          40.680000975921644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Nome": "Largo Plebiscito",
+        "Criticit?": "Varco ZTL",
+        "Proposta": null,
+        "Stato proposta": "Comitato CS",
+        "Tematica": "Servizi urbani",
+        "ID": 15,
+        "Data immissione": "2026-10-18",
+        "Allegato": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.760113448410314,
+          40.68079798432331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Nome": "Metro Torrione",
+        "Criticit?": "Assenza collegamenti autobus",
+        "Proposta": "Creare rete di trasporto circolare di collegamento",
+        "Stato proposta": null,
+        "Tematica": "Servizi urbani",
+        "ID": 14,
+        "Data immissione": "2026-10-18",
+        "Allegato": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.790287878409941,
+          40.67036086832203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Nome": "Metro Pastena",
+        "Criticit?": "Assenza collegamenti autobus",
+        "Proposta": "Creare rete di trasporto circolare di collegamento",
+        "Stato proposta": null,
+        "Tematica": "Servizi urbani",
+        "ID": 12,
+        "Data immissione": "2026-10-18",
+        "Allegato": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.799720746909765,
+          40.66495413578948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Nome": "Metro Mercatello",
+        "Criticit?": "Assenza collegamenti autobus",
+        "Proposta": "Creare rete di trasporto circolare di collegamento",
+        "Stato proposta": null,
+        "Tematica": "Servizi urbani",
+        "ID": 12,
+        "Data immissione": "2026-10-18",
+        "Allegato": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.804713951542766,
+          40.658824063788664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Nome": "Metro Arbostella",
+        "Criticit?": "Assenza collegamenti autobus",
+        "Proposta": "Creare rete di trasporto circolare di collegamento",
+        "Stato proposta": null,
+        "Tematica": "Servizi urbani",
+        "ID": 12,
+        "Data immissione": "2026-10-18",
+        "Allegato": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.813104777722272,
+          40.65170597917574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Nome": "Via Diaz",
+        "Criticit?": "Immondizia, scarsa cura",
+        "Proposta": null,
+        "Stato proposta": null,
+        "Tematica": "Servizi urbani",
+        "ID": 23,
+        "Data immissione": "2026-10-18",
+        "Allegato": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.767676995696583,
+          40.677223848669385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Nome": "Via Galloppo",
+        "Criticit?": "Lavori stradali non conformi",
+        "Proposta": null,
+        "Stato proposta": null,
+        "Tematica": "Servizi urbani",
+        "ID": 31,
+        "Data immissione": "2026-10-18",
+        "Allegato": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.790257506163542,
+          40.66832443993103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Nome": "Liceo dap",
+        "Criticit?": "scarsamanutenzione",
+        "Proposta": "",
+        "Stato proposta": "",
+        "Tematica": "Servizi urbani",
+        "Quartiere": "Carmine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.768918,
+          40.68494
+        ]
+      }
+    }
+  ]
 };
