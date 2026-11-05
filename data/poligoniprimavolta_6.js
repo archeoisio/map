@@ -1,4 +1,4 @@
-var poligoniprimavolta = {
+var json_poligoniprimavolta = {
   "type": "FeatureCollection",
   "name": "poligoniprimavolta2",
   "crs": {
