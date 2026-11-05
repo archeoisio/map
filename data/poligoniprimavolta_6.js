@@ -2712,47 +2712,6 @@ var json_poligoniprimavolta_6 = {
           ]
         ]
       }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Data immissione": "2026-11-05T19:43:58.000Z",
-        "Nome": 1111,
-        "Criticità": 1111,
-        "Proposta": 1111,
-        "Stato proposta": 1111,
-        "Tematica": "Spazi pubblici",
-        "Quartiere": "Centro Storico",
-        "Allegato": 1111,
-        "id": "segnalazione_051126_040"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              14.767701,
-              40.68562
-            ],
-            [
-              14.767711,
-              40.685461
-            ],
-            [
-              14.767991,
-              40.685466
-            ],
-            [
-              14.768022,
-              40.685571
-            ],
-            [
-              14.767701,
-              40.68562
-            ]
-          ]
-        ]
-      }
     }
   ]
 };
