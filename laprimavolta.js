@@ -84,7 +84,7 @@ customStyleTag.innerHTML = `
     }
     /* Posiziona i pulsanti di Leaflet.Draw in alto a destra, distanziati dal bordo */
     .leaflet-right .leaflet-draw.leaflet-control {
-        margin-top: 80px !important; /* Spinge i pulsanti più in basso per non coprire il logo */
+        margin-top: 60px !important; /* Spinge i pulsanti più in basso per non coprire il logo */
         margin-right: 10px !important;
     }
     /* ==================== STILE MOBILE ==================== */
