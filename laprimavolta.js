@@ -4,6 +4,9 @@ let selectedLayer = null;
 let allTavoloLayers = [];
 let currentActiveTab = null;
 
+// URL della Web App di Google Apps Script
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxcXU7BVt-KiZD3lhULzskq76gZCzL-5uik-UERZw8WajZfIq0dI2esbh9KdshNELdY/exec";
+
 const isMobile = window.innerWidth < 768; 
 const MIN_ZOOM_VISIBLE = isMobile ? 2 : 13; 
 
@@ -29,30 +32,29 @@ customStyleTag.innerHTML = `
         padding: 0 !important;
     }
 
-/* Stile per il logo sulla mappa */
+    /* Stile per il logo sulla mappa */
     .map-logo-container {
         background: transparent !important;
         border: none !important;
         box-shadow: none !important;
         padding: 0 !important;
-        margin-top: 5px !important;  /* Distanza dal bordo superiore */
+        margin-top: 5px !important;
         margin-right: 5px !important;
     }
 
     #map-custom-logo {
-        width: 70px; /* Puoi aumentare o diminuire i pixel a seconda di come preferisci la grandezza */
+        width: 70px;
         height: auto;
         display: block;
         border: none;
     }
     @media (max-width: 768px) {
         #map-custom-logo {
-            width: 50px;  /* Dimensione più compatta su smartphone */
+            width: 50px;
             height: 50px;
         }
-        
         .map-logo-container {
-            margin-top: 1px !important;    /* Margini leggermente ridotti su mobile */
+            margin-top: 1px !important;
             margin-right: 1px !important;
         }
     }
@@ -80,6 +82,7 @@ customStyleTag.innerHTML = `
         box-shadow: none !important;
         margin: 0 !important;
     }
+    
     /* ==================== STILE MOBILE ==================== */
     #custom-bottom-panel { 
         position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); 
@@ -119,7 +122,7 @@ customStyleTag.innerHTML = `
         transform: translate(-50%, -50%); 
     }
 
-    /* ==================== DESKTOP STYLES (ORIZZONTALE, COMPATTO E COLLEGATO) ==================== */
+    /* ==================== DESKTOP STYLES ==================== */
     @media (min-width: 768px) {
         #custom-bottom-panel {
             position: fixed;
@@ -182,7 +185,7 @@ customStyleTag.innerHTML = `
             padding: 0 !important;
             white-space: nowrap;
         }
-/* Dimensione del font quando il pannello è APERTO su desktop */
+
         #custom-bottom-panel.open .panel-main-header b {
             font-size: 14px !important;
             padding: 0 !important;
@@ -322,8 +325,8 @@ customStyleTag.innerHTML = `
     #search-box-container {
         position: fixed;
         top: 0px;
-        left: 110px; /* Si posiziona subito dopo i bottoni in alto a sinistra */
-        height: 36px;          /* <--- Forza l'altezza precisa a 36px */
+        left: 110px;
+        height: 36px;
         box-sizing: border-box;
         background: white;
         padding: 4px 8px;
@@ -341,7 +344,7 @@ customStyleTag.innerHTML = `
         border-radius: 4px;
         padding: 5px 8px;
         font-size: 12px;
-        width: 220px; /* Larghezza ideale su desktop */
+        width: 220px;
         outline: none;
     }
 
@@ -364,7 +367,6 @@ customStyleTag.innerHTML = `
         margin-left: 2px;
     }
 
-    /* Adattamento automatico per schermi stretti (Mobile) */
     @media (max-width: 480px) {
         #search-box-container {
             height: 36px;
@@ -372,7 +374,7 @@ customStyleTag.innerHTML = `
             justify-content: space-between;
         }
         #search-input {
-            flex-grow: 1; /* L'input si ridimensiona fluidamente occupando lo spazio disponibile */
+            flex-grow: 1;
             width: auto;
         }
     }
@@ -613,24 +615,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const LogoControl = L.Control.extend({
         options: {
-            position: 'topright' // Puoi metterlo in 'topright', 'bottomleft', ecc.
+            position: 'topright'
         },
         onAdd: function (map) {
             const container = L.DomUtil.create('div', 'map-logo-container');
-            
-            // Percorso corretto del logo nella cartella data
             container.innerHTML = `
                 <img src="data/Laprimavolta.png" alt="Logo La Prima Volta" id="map-custom-logo" />
             `;
-            
-            // Impedisce che i click sul logo muovano la mappa sottostante
             L.DomEvent.disableClickPropagation(container);
-            
             return container;
         }
     });
 
-    // Aggiunge il logo alla mappa
     map.addControl(new LogoControl());
     map.createPane('pane_confini_amministrativi');
     map.getPane('pane_confini_amministrativi').style.zIndex = 404;
@@ -825,6 +821,112 @@ document.addEventListener('DOMContentLoaded', () => {
 
     checkZoomVisibility();
 
+    // ==================== AGGIUNTA LEAFLET.DRAW (DISEGNO E INVIO SEGNALAZIONI) ====================
+    var drawnItems = new L.FeatureGroup();
+    map.addLayer(drawnItems);
+
+    var drawControl = new L.Control.Draw({
+        position: 'topleft', // Si posiziona sotto i tuoi bottoni esistenti
+        edit: {
+            featureGroup: drawnItems
+        },
+        draw: {
+            polygon: {
+                allowIntersection: false,
+                showArea: true
+            },
+            polyline: false,
+            circle: false,
+            rectangle: false,
+            circlemarker: false,
+            marker: true // Attiva il disegno di punti
+        }
+    });
+    map.addControl(drawControl);
+
+    map.on(L.Draw.Event.CREATED, function (e) {
+        var layer = e.layer;
+        drawnItems.addLayer(layer);
+        var geojson = layer.toGeoJSON();
+
+        var formHtml = `
+            <div id="popup-form" style="width: 240px; font-family: sans-serif;">
+                <h4 style="margin: 0 0 8px 0; color: #2c3e50;">Nuova Segnalazione</h4>
+                <label style="font-size:11px; font-weight:bold;">Nome:*</label><br><input type="text" id="f-nome" style="width:100%; margin-bottom:5px;" required><br>
+                <label style="font-size:11px; font-weight:bold;">Criticità:*</label><br><textarea id="f-criticita" style="width:100%; height:50px; margin-bottom:5px;" required></textarea><br>
+                <label style="font-size:11px; font-weight:bold;">Proposta:</label><br><textarea id="f-proposta" style="width:100%; height:40px; margin-bottom:5px;"></textarea><br>
+                <label style="font-size:11px; font-weight:bold;">Stato proposta:</label><br><input type="text" id="f-statoprop" style="width:100%; margin-bottom:5px;"><br>
+                <label style="font-size:11px; font-weight:bold;">Tematica:*</label><br>
+                <select id="f-tematica" style="width:100%; margin-bottom:5px;">
+                    <option value="Spazi pubblici">Spazi pubblici</option>
+                    <option value="Verde urbano">Verde urbano</option>
+                    <option value="Mobilità">Mobilità</option>
+                    <option value="Ambiente">Ambiente</option>
+                    <option value="Cultura">Cultura</option>
+                    <option value="Salute">Salute</option>
+                    <option value="Servizi urbani">Servizi urbani</option>
+                    <option value="Altro">Altro</option>
+                </select><br>
+                <label style="font-size:11px; font-weight:bold;">Quartiere:*</label><br>
+                <select id="f-quartiere" style="width:100%; margin-bottom:8px;">
+                    <option value="Centro Storico">Centro Storico</option>
+                    <option value="Carmine">Carmine</option>
+                    <option value="Torrione">Torrione</option>
+                    <option value="Pastena">Pastena</option>
+                    <option value="Fratte / Irno">Fratte / Irno</option>
+                    <option value="Altro">Altro</option>
+                </select><br>
+                <label style="font-size:11px; font-weight:bold;">Tua Email:*</label><br><input type="email" id="f-email" style="width:100%; margin-bottom:10px;" required><br>
+                <button id="btn-invia-segnalazione" style="background:#28a745; color:white; border:none; padding:8px 12px; cursor:pointer; width:100%; font-weight:bold; border-radius:4px;">Invia Segnalazione</button>
+            </div>
+        `;
+
+        layer.bindPopup(formHtml).openPopup();
+
+        setTimeout(function() {
+            var btnInvia = document.getElementById('btn-invia-segnalazione');
+            if (btnInvia) {
+                btnInvia.onclick = function() {
+                    var payload = {
+                        nome: document.getElementById('f-nome').value,
+                        criticita: document.getElementById('f-criticita').value,
+                        proposta: document.getElementById('f-proposta').value,
+                        stato_proposta: document.getElementById('f-statoprop').value,
+                        tematica: document.getElementById('f-tematica').value,
+                        quartiere: document.getElementById('f-quartiere').value,
+                        email: document.getElementById('f-email').value,
+                        geometry: geojson.geometry
+                    };
+
+                    if (!payload.nome || !payload.criticita || !payload.email) {
+                        alert("Compila i campi obbligatori (Nome, Criticità, Email).");
+                        return;
+                    }
+
+                    btnInvia.innerText = "Invio in corso...";
+                    btnInvia.disabled = true;
+
+                    fetch(GOOGLE_SCRIPT_URL, {
+                        method: 'POST',
+                        mode: 'no-cors',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    }).then(function() {
+                        layer.closePopup();
+                        alert("Segnalazione inviata con successo! Sarà visibile sulla mappa dopo la moderazione.");
+                        drawnItems.removeLayer(layer);
+                    }).catch(function(error) {
+                        console.error("Errore:", error);
+                        alert("Errore durante l'invio.");
+                        btnInvia.innerText = "Invia Segnalazione";
+                        btnInvia.disabled = false;
+                    });
+                };
+            }
+        }, 300);
+    });
+    // =========================================================================================
+
    let searchMarker = null;
 
     map.on('click', () => {
@@ -841,7 +943,6 @@ document.addEventListener('DOMContentLoaded', () => {
             searchMarker = null;
         }
 
-        // Svuota l'input se l'utente clicca sulla mappa
         const searchInput = document.getElementById('search-input');
         if (searchInput) searchInput.value = '';
     });
@@ -863,10 +964,9 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.body.appendChild(searchBoxContainer);
 
-    // --- AGGIUNTO: Gestione pulizia automatica alla chiusura tramite la crocetta ---
     document.getElementById('search-close').addEventListener('click', () => {
         searchBoxContainer.style.display = 'none';
-        document.getElementById('search-input').value = ''; // Pulisce la casella
+        document.getElementById('search-input').value = '';
         if (searchMarker) {
             map.removeLayer(searchMarker);
             searchMarker = null;
@@ -888,7 +988,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     const lon = parseFloat(data[0].lon);
                     const displayName = data[0].display_name;
 
-                    // Centratura coerente con offset (evita che il pannello copra il marker)
                     map.setView([lat, lon], 18, { animate: false });
                     if (window.innerWidth < 768) {
                         map.panBy([0, 150], { animate: false });
@@ -916,13 +1015,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('search-input').onkeypress = (e) => {
         if (e.key === 'Enter') executeSearch();
     };
-    document.getElementById('search-close').onclick = () => {
-        searchBoxContainer.style.display = 'none';
-        if (searchMarker) {
-            map.removeLayer(searchMarker);
-            searchMarker = null;
-        }
-    };
 
     window.closeFeaturePanel = function() {
         featureDetailPanel.style.display = 'none';
@@ -936,9 +1028,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const isOpen = bottomPanel.classList.contains('open');
         const checkMobile = window.innerWidth < 768;
 
-        // Logica frecce esatta:
-        // - Mobile: Chiuso = ▲ (punta in su), Aperto = ▼ (punta in giù)
-        // - Desktop: Chiuso = ▼ (punta in giù), Aperto = ▲ (punta in su)
         let arrowSymbol;
         if (checkMobile) {
             arrowSymbol = isOpen ? '▼' : '▲';
@@ -978,7 +1067,6 @@ document.addEventListener('DOMContentLoaded', () => {
         html += `<div class="mobile-content-container" style="display: flex; flex-direction: column; gap: 6px; flex-grow: 1; overflow: hidden; height: 210px;">`;
 
         if (checkMobile) {
-            // ==================== LAYOUT MOBILE ====================
             html += `
                 <div style="display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #e1e1e1; padding-bottom: 5px; margin-bottom: 2px; flex-shrink: 0; width: 100%; box-sizing: border-box;">
                     
@@ -1040,7 +1128,6 @@ document.addEventListener('DOMContentLoaded', () => {
             html += `</div></div>`;
 
         } else {
-            // ==================== LAYOUT DESKTOP OTTIMIZZATO ====================
             html = `
                 <div class="panel-main-header" onclick="
                     const panel = document.getElementById('custom-bottom-panel');
@@ -1171,10 +1258,9 @@ document.addEventListener('DOMContentLoaded', () => {
             };
         });
 
-  bottomPanel.querySelectorAll('.vola-btn').forEach(btn => {
+        bottomPanel.querySelectorAll('.vola-btn').forEach(btn => {
             btn.onclick = (e) => {
                 e.stopPropagation();
-                // Usiamo currentTarget per catturare sempre il bottone ed evitare errori sul target interno (emoji)
                 const targetBtn = e.currentTarget;
                 const tavolo = targetBtn.getAttribute('data-tavolo');
                 const idx = parseInt(targetBtn.getAttribute('data-index'));
@@ -1198,7 +1284,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (checkMobile) {
                         map.panBy([0, 150], { animate: false }); 
                     } else {
-                        // Sposta l'elemento nella porzione destra dello schermo su desktop
                         map.panBy([-300, 0], { animate: false });
                     }
                 } else {
@@ -1218,7 +1303,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             maxZoom: 19,
                             animate: false
                         });
-                        // Centra il poligono nella parte destra dello schermo su desktop
                         map.panBy([-250, 0], { animate: false });
                     }
                 }
@@ -1261,53 +1345,51 @@ document.addEventListener('DOMContentLoaded', () => {
     setVh();
     window.addEventListener('resize', setVh);
 
-   map.on('locationfound', function(e) {
-    var radius = e.accuracy / 2;
-    
-    // Se l'accuratezza è pessima (es. da desktop/IP con raggio enorme), evitiamo il cerchio gigante
-    if (e.accuracy > 30000) {
-        L.marker(e.latlng).addTo(map)
-            .bindPopup("Posizione approssimativa stimata da rete").openPopup();
+    map.on('locationfound', function(e) {
+        var radius = e.accuracy / 2;
         
-        map.setView(e.latlng, 16, { animate: false });
-        if (window.innerWidth < 768) {
-            map.panBy([0, 150], { animate: false });
+        if (e.accuracy > 30000) {
+            L.marker(e.latlng).addTo(map)
+                .bindPopup("Posizione approssimativa stimata da rete").openPopup();
+            
+            map.setView(e.latlng, 16, { animate: false });
+            if (window.innerWidth < 768) {
+                map.panBy([0, 150], { animate: false });
+            } else {
+                map.panBy([-300, 0], { animate: false });
+            }
         } else {
-            map.panBy([-300, 0], { animate: false });
-        }
-    } else {
-        // --- EFFETTO PUNTO AZZURRO STILE GOOGLE ---
-        L.circle(e.latlng, radius, {
-            color: '#1a73e8',      
-            fillColor: '#1a73e8',  
-            fillOpacity: 0.15,     
-            weight: 1,
-            interactive: false     
-        }).addTo(map);
+            L.circle(e.latlng, radius, {
+                color: '#1a73e8',      
+                fillColor: '#1a73e8',  
+                fillOpacity: 0.15,     
+                weight: 1,
+                interactive: false     
+            }).addTo(map);
 
-        L.circleMarker(e.latlng, {
-            radius: 8,             
-            color: '#ffffff',      
-            fillColor: '#1a73e8',  
-            fillOpacity: 1,
-            weight: 3
-        }).addTo(map)
-          .bindPopup("Ti trovi qui (entro " + Math.round(radius) + " metri)");
-        
-        // Centriamo la mappa direttamente a zoom 18 con l'offset corretto (come la ricerca)
-        map.setView(e.latlng, 18, { animate: false });
-        if (window.innerWidth < 768) {
-            map.panBy([0, 150], { animate: false }); // Sposta in alto su mobile
-        } else {
-            map.panBy([-300, 0], { animate: false }); // Sposta a destra su desktop
+            L.circleMarker(e.latlng, {
+                radius: 8,             
+                color: '#ffffff',      
+                fillColor: '#1a73e8',  
+                fillOpacity: 1,
+                weight: 3
+            }).addTo(map)
+              .bindPopup("Ti trovi qui (entro " + Math.round(radius) + " metri)");
+            
+            map.setView(e.latlng, 18, { animate: false });
+            if (window.innerWidth < 768) {
+                map.panBy([0, 150], { animate: false });
+            } else {
+                map.panBy([-300, 0], { animate: false });
+            }
         }
-    }
-});
+    });
 
     map.on('locationerror', function(e) { 
         alert("Impossibile determinare la posizione: " + e.message); 
     });
 
+    // --- I TUOI TRE PULSANTI ESISTENTI IN ALTO A SINISTRA ---
     const btnControl = L.control({ position: 'topleft' });
     btnControl.onAdd = function(map) {
         const container = L.DomUtil.create('div', 'leaflet-bar');
